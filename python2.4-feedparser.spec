@@ -2,20 +2,20 @@
 %define version		4.1
 %define __python	%{_bindir}/python2.4
 
-Summary:   Parse RSS and Atom feeds in Python
-Name:      python2.4-feedparser
-Version:   %{version}
-Release:   %mkrel 3
-Source0:   http://ovh.dl.sourceforge.net/sourceforge/%{pkgname}/%{pkgname}-%{version}.tar.bz2
-License:   BSD
-URL:       http://feedparser.org/
-Group:     Development/Python
+Summary:       Parse RSS and Atom feeds in Python
+Name:          python2.4-feedparser
+Version:       %{version}
+Release:       %mkrel 3
+Source0:       http://ovh.dl.sourceforge.net/sourceforge/%{pkgname}/%{pkgname}-%{version}.tar.bz2
+License:       BSD
+URL:           http://feedparser.org/
+Group:         Development/Python
 %if %{mdkversion} <= 200800
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:     %{_tmppath}/%{name}-%{version}-buildroot
 %endif
-Requires:  python2.4
+Requires:      python2.4
 BuildRequires: python2.4-devel
-BuildArch: noarch
+BuildArch:     noarch
 
 %description
 Feedparser is the "Universal Feed Parser" library for python, which
